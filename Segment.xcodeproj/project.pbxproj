@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		496CE2DF27BCF6CD00567D22 /* UniversalFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 496CE2E027BCF6CD00567D22 /* Build configuration list for PBXAggregateTarget "UniversalFramework" */;
+			buildPhases = (
+				496CE2E327BCF6D900567D22 /* Build */,
+				4970FF3727BD04B100192499 /* XCFramework */,
+			);
+			dependencies = (
+			);
+			name = UniversalFramework;
+			productName = UniversalFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5AF0E8AE77F57B356DACCFE7 /* AutoScreenReportingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0E8457CCFC077382BF449 /* AutoScreenReportingTest.swift */; };
 		630FC8EA2107F2A500A759C5 /* SEGScreenReporting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF0EDFEDC0EE79A0A0EB713 /* SEGScreenReporting.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -466,6 +481,10 @@
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Segment;
 				TargetAttributes = {
+					496CE2DF27BCF6CD00567D22 = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					EADEB85A1DECD080005322DA = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Manual;
@@ -492,6 +511,7 @@
 			targets = (
 				EADEB85A1DECD080005322DA /* Segment */,
 				EADEB8691DECD0EF005322DA /* SegmentTests */,
+				496CE2DF27BCF6CD00567D22 /* UniversalFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -512,6 +532,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		496CE2E327BCF6D900567D22 /* Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Build;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./universalFrameworkGenerator.sh Segment\n";
+		};
+		4970FF3727BD04B100192499 /* XCFramework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = XCFramework;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./universalFrameworkGenerator.sh xcframework\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EADEB8561DECD080005322DA /* Sources */ = {
@@ -582,6 +641,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		496CE2E127BCF6CD00567D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		496CE2E227BCF6CD00567D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		EADEB8611DECD080005322DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -793,6 +868,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		496CE2E027BCF6CD00567D22 /* Build configuration list for PBXAggregateTarget "UniversalFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496CE2E127BCF6CD00567D22 /* Debug */,
+				496CE2E227BCF6CD00567D22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EADEB8551DECD080005322DA /* Build configuration list for PBXProject "Segment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.13'
 
   s.dependency 'AppsFlyerFramework'
+  s.static_framework = true
 
   s.source_files = [
     'Segment/Classes/**/*.{h,m}',

@@ -22,7 +22,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4955383E298D475800218764 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4955383D298D475800218764 /* AppsFlyerLib.framework */; };
+		49553846298D51D900218764 /* SEGAppsFlyerIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 49553841298D51D900218764 /* SEGAppsFlyerIntegration.h */; };
+		49553847298D51D900218764 /* SEGAppsFlyerIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 49553842298D51D900218764 /* SEGAppsFlyerIntegrationFactory.m */; };
+		49553848298D51D900218764 /* SEGAppsFlyerIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 49553843298D51D900218764 /* SEGAppsFlyerIntegrationFactory.h */; };
+		49553849298D51D900218764 /* SEGAppsFlyerIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 49553844298D51D900218764 /* SEGAppsFlyerIntegration.m */; };
+		4955384A298D51D900218764 /* SegmentAppsFlyeriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 49553845298D51D900218764 /* SegmentAppsFlyeriOS.h */; };
+		4955384B298D51F700218764 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4955383D298D475800218764 /* AppsFlyerLib.framework */; };
 		5AF0E8AE77F57B356DACCFE7 /* AutoScreenReportingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0E8457CCFC077382BF449 /* AutoScreenReportingTest.swift */; };
 		630FC8EA2107F2A500A759C5 /* SEGScreenReporting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF0EDFEDC0EE79A0A0EB713 /* SEGScreenReporting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E265C791FB1178C0030E08E /* IntegrationsManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E265C781FB1178C0030E08E /* IntegrationsManagerTest.swift */; };
@@ -115,6 +120,11 @@
 
 /* Begin PBXFileReference section */
 		4955383D298D475800218764 /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppsFlyerLib.framework; path = Segment/frameworks/AppsFlyerLib.framework; sourceTree = "<group>"; };
+		49553841298D51D900218764 /* SEGAppsFlyerIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAppsFlyerIntegration.h; sourceTree = "<group>"; };
+		49553842298D51D900218764 /* SEGAppsFlyerIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAppsFlyerIntegrationFactory.m; sourceTree = "<group>"; };
+		49553843298D51D900218764 /* SEGAppsFlyerIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAppsFlyerIntegrationFactory.h; sourceTree = "<group>"; };
+		49553844298D51D900218764 /* SEGAppsFlyerIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAppsFlyerIntegration.m; sourceTree = "<group>"; };
+		49553845298D51D900218764 /* SegmentAppsFlyeriOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentAppsFlyeriOS.h; sourceTree = "<group>"; };
 		5AF0E8457CCFC077382BF449 /* AutoScreenReportingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScreenReportingTest.swift; sourceTree = "<group>"; };
 		5AF0EDFEDC0EE79A0A0EB713 /* SEGScreenReporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGScreenReporting.h; sourceTree = "<group>"; };
 		63E090D722DD49C300DEC7EC /* UIViewController+SegScreenTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegScreenTest.h"; sourceTree = "<group>"; };
@@ -212,7 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4955383E298D475800218764 /* AppsFlyerLib.framework in Frameworks */,
+				4955384B298D51F700218764 /* AppsFlyerLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +309,11 @@
 		EADEB8751DECD12B005322DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				49553841298D51D900218764 /* SEGAppsFlyerIntegration.h */,
+				49553844298D51D900218764 /* SEGAppsFlyerIntegration.m */,
+				49553843298D51D900218764 /* SEGAppsFlyerIntegrationFactory.h */,
+				49553842298D51D900218764 /* SEGAppsFlyerIntegrationFactory.m */,
+				49553845298D51D900218764 /* SegmentAppsFlyeriOS.h */,
 				EADEB85E1DECD080005322DA /* Segment.h */,
 				EADEB87C1DECD12B005322DA /* SEGAliasPayload.h */,
 				EADEB87D1DECD12B005322DA /* SEGAliasPayload.m */,
@@ -420,14 +435,17 @@
 				EADEB8DE1DECD12B005322DA /* SEGAnalyticsConfiguration.h in Headers */,
 				EADEB8D61DECD12B005322DA /* UIViewController+SEGScreen.h in Headers */,
 				EADEB8CF1DECD12B005322DA /* SEGStorage.h in Headers */,
+				4955384A298D51D900218764 /* SegmentAppsFlyeriOS.h in Headers */,
 				75FD42052524F1E000BC8970 /* SEGWebhookIntegration.h in Headers */,
 				A352176023AD5825005B07F6 /* SEGMacros.h in Headers */,
 				EADEB8D21DECD12B005322DA /* SEGUserDefaultsStorage.h in Headers */,
 				EADEB8D01DECD12B005322DA /* SEGStoreKitTracker.h in Headers */,
 				EADEB8D41DECD12B005322DA /* SEGUtils.h in Headers */,
+				49553846298D51D900218764 /* SEGAppsFlyerIntegration.h in Headers */,
 				EADEB8601DECD080005322DA /* Segment.h in Headers */,
 				EADEB8C31DECD12B005322DA /* SEGAnalyticsUtils.h in Headers */,
 				EADEB8B91DECD12B005322DA /* SEGIntegrationsManager.h in Headers */,
+				49553848298D51D900218764 /* SEGAppsFlyerIntegrationFactory.h in Headers */,
 				630FC8EA2107F2A500A759C5 /* SEGScreenReporting.h in Headers */,
 				EADEB8AE1DECD12B005322DA /* SEGAES256Crypto.h in Headers */,
 				EADEB8C51DECD12B005322DA /* SEGFileStorage.h in Headers */,
@@ -594,6 +612,7 @@
 				EADEB8B21DECD12B005322DA /* SEGAliasPayload.m in Sources */,
 				EADEB8BA1DECD12B005322DA /* SEGIntegrationsManager.m in Sources */,
 				EADEB8C41DECD12B005322DA /* SEGAnalyticsUtils.m in Sources */,
+				49553849298D51D900218764 /* SEGAppsFlyerIntegration.m in Sources */,
 				EADEB8C61DECD12B005322DA /* SEGFileStorage.m in Sources */,
 				EADEB8D31DECD12B005322DA /* SEGUserDefaultsStorage.m in Sources */,
 				EADEB8BC1DECD12B005322DA /* SEGPayload.m in Sources */,
@@ -603,6 +622,7 @@
 				EADEB8DF1DECD12B005322DA /* SEGAnalyticsConfiguration.m in Sources */,
 				EADEB8D51DECD12B005322DA /* SEGUtils.m in Sources */,
 				EAA5427E1EB42B8C00945DA7 /* SEGReachability.m in Sources */,
+				49553847298D51D900218764 /* SEGAppsFlyerIntegrationFactory.m in Sources */,
 				EADEB8B41DECD12B005322DA /* SEGGroupPayload.m in Sources */,
 				A34CC6DD249AAEBB00C5E368 /* SEGState.m in Sources */,
 				EADEB8D71DECD12B005322DA /* UIViewController+SEGScreen.m in Sources */,

@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.source_files = [
     'Segment/Classes/**/*.{h,m}',
     'Segment/Internal/**/*.{h,m}',
-    'Segment/frameworks/AppsFlyerLib.framework'
+    'Segment/frameworks/*'
   ]
 end

@@ -1,4 +1,4 @@
-#import <Foundation/Foundation.h>;
+#import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
 #import "SEGAnalytics.h"
 

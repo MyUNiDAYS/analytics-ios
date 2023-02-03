@@ -21,7 +21,7 @@
  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>;
+#import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>;
 
 /**

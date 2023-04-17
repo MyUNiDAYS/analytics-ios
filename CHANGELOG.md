@@ -1,6 +1,14 @@
 Change Log
 ==========
 
+Version 4.1.8 *(1 February, 2023)*
+-----------------------------
+* [Fix](https://github.com/segmentio/analytics-ios/pull/1052) Fix null setting entry crash on tvOS
+
+Version 4.1.7 *(6 January, 2023)*
+-----------------------------
+* [Fix](https://github.com/segmentio/analytics-ios/pull/1049) Removed writekey from request header; Added context.instanceId.
+
 Version 4.1.6 *(5 October, 2021)*
 -----------------------------
 * [Fix](https://github.com/segmentio/analytics-ios/pull/1016) Removed unused exclude in Package.swift

@@ -85,19 +85,6 @@ static SEGAnalytics *__sharedInstance = nil;
 #endif
         }
 
-#if TARGET_OS_IPHONE
-        if (configuration.recordScreenViews) {
-            [UIViewController seg_swizzleViewDidAppear];
-        }
-#elif TARGET_OS_OSX
-        if (configuration.recordScreenViews) {
-            [NSViewController seg_swizzleViewDidAppear];
-        }
-#endif
-        if (configuration.trackInAppPurchases) {
-            _storeKitTracker = [SEGStoreKitTracker trackTransactionsForAnalytics:self];
-        }
-
 #if !TARGET_OS_TV
         if (configuration.trackPushNotifications && configuration.launchOptions) {
 #if TARGET_OS_IOS

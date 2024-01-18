@@ -10,7 +10,7 @@
 #import "SEGState.h"
 
 #if TARGET_OS_IPHONE
-@import UIKit;
+#import <UIKit/UIKit.h>
 #endif
 
 NSString *const kSEGSegmentDestinationName = @"Segment.io";

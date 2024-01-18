@@ -3,7 +3,7 @@
 //
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 #import "SEGAnalyticsUtils.h"
 #import "SEGSerializableValue.h"
 

@@ -1,4 +1,4 @@
-@import Foundation;
+#import <Foundation/Foundation.h>
 #import "SEGIntegrationFactory.h"
 #import "SEGCrypto.h"
 #import "SEGAnalyticsConfiguration.h"

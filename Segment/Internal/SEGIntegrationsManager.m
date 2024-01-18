@@ -6,9 +6,9 @@
 //  Copyright © 2016 Segment. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 #if TARGET_OS_IPHONE
-@import UIKit;
+#import <UIKit/UIKit.h>
 #endif
 #import <objc/runtime.h>
 #import "SEGAnalyticsUtils.h"

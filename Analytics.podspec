@@ -15,12 +15,18 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/segmentio/analytics-ios.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/segment'
 
-  s.ios.deployment_target = '10.0'
-  s.tvos.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
+  s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.13'
+
+    s.requires_arc = true
+  s.static_framework = true
+
+  s.dependency 'AppsFlyerFramework'
 
   s.source_files = [
     'Segment/Classes/**/*.{h,m}',
-    'Segment/Internal/**/*.{h,m}'
+    'Segment/Internal/**/*.{h,m}',
+    'Segment/frameworks/*'
   ]
 end

@@ -1,9 +1,7 @@
+### ⚠️ Maintenance ⚠️
+This library is in maintenance mode. It will send data as intended, but receive no new feature support and only critical maintenance updates from Segment.
 
-⚠️ **WARNING** ⚠️
-
-Segment will continue to accept incoming traffic from Analytics-iOS. However, we have launched our new flagship library, [Analytics-Swift](https://github.com/segmentio/analytics-swift), with [significantly improved performance](https://segment.com/blog/sdk-performance-improvements/) as well as new business-tier functionality such as [Destination Filters](https://segment.com/docs/connections/sources/catalog/libraries/mobile/apple/swift-destination-filters/), Live Plugins, and Flush Policies, with more to come. 
-
-
+We highly recommend using our upgraded [Analytics-Swift](https://github.com/segmentio/analytics-swift) to benefit from feature enhancements and ongoing support.
 
 # Analytics
 [![Circle CI](https://circleci.com/gh/segmentio/analytics-ios.svg?style=shield&circle-token=31c5b3e5edeb404b30141ead9dcef3eb37d16d4d)](https://circleci.com/gh/segmentio/analytics-ios)
